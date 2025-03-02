@@ -6,3 +6,49 @@
         display: flex;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+    
+    /* About section responsiveness */
+    .section-container {
+        flex-direction: column;
+    }
+    
+    .about-containers {
+        flex-direction: column;
+    }
+    
+    section {
+        height: fit-content;
+        margin: 0 5%;
+    }
+    
+    .section_pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #profile {
+        flex-direction: column;
+        height: fit-content;
+    }
+    
+    .section_pic-container {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 2rem;
+    }
+    
+    .about-containers {
+        margin-top: 0;
+    }
+}
